@@ -2,17 +2,18 @@ import React from "react";
 import ListButton from "./ListButton";
 
 const ListSelector = (props) => {
-
+    const buttons = props.buttons.map((button) => {
+        return(
+            <li key={button} className="nav-item">
+                <ListButton onListSelect={props.onListSelect} listName={button} />
+            </li>
+        );
+    });
 
     return(
         <div>
             <ul className="nav nav-pills justify-content-around">
-                <li className="nav-item">
-                    <ListButton onListSelect={props.onListSelect} listName="Hiragana" />
-                </li>
-                <li className="nav-item">
-                    <ListButton onListSelect={props.onListSelect} listName="Romanjii" />
-                </li>
+                {buttons}
             </ul>
         </div>
     );

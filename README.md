@@ -1,5 +1,5 @@
 
-## Word Gen V0.01
+## Word Gen V0.02
 A Simple React App which randomises a list of words and outputs them to the user.
 
 ## Install

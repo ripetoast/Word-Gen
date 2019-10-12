@@ -1,0 +1,10 @@
+body {
+    background-color: #D9CAB0;
+}
+
+.keyword-item {
+    color: #403F40;
+    &:hover{
+        background-color: rgb(246, 246, 246);
+    }
+}

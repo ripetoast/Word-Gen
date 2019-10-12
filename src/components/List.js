@@ -19,7 +19,7 @@ class List extends React.Component{
 
     render(){
         const renderedList = this.shuffle(this.props.listData).map((keyword) => {
-            return <li key={keyword} className="list-group-item list-group-item-light text-center"><h1 className="display-4">{keyword}</h1></li>;
+            return <li key={keyword} className="keyword-item list-group-item text-center"><h1 className="display-4">{keyword}</h1></li>;
         });
 
         return(
