@@ -32,12 +32,20 @@ class App extends React.Component{
         });
     }
 
+    rerenderList = () => {
+        this.setState((prevState) => ({
+            selectedList: prevState.selectedList
+        }));
+    }
+
     render(){
         return(
             <div className="container bg bg-light">
-                <h1 className="display-1 text-center">Word Gen</h1>
+                <div className="d-flex justify-content-center">
+                    <img src="./ListGen.svg" alt="logo" style={{ "width": "30rem" }} />
+                </div>
                 <br/>
-                <ListSelector onListSelect={this.onListSelect} buttons={this.state.buttons} />
+                <ListSelector rerenderList={this.rerenderList} onListSelect={this.onListSelect} buttons={this.state.buttons} />
                 <br />
                 {this.state.selectedList === null ? "" : <List listData={this.state.list} />}
             </div>

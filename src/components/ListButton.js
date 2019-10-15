@@ -11,10 +11,12 @@ class ListButton extends React.Component{
 
     render(){
         return (
-            <div>
-                <button onClick={this.handleClick} value={this.props.listName} href="" className="btn btn-outline-primary">
-                    {this.props.listName}
-                </button>      
+            <div className="list-button">
+                {/* <a className="dropdown-item" href="#"> */}
+                <button onClick={this.handleClick} value={this.props.listName} href="" className="btn btn-outline-primary dropdown-item">
+                        {this.props.listName}
+                </button>     
+                {/* </a>  */}
             </div>
         )
     }   

@@ -1,5 +1,8 @@
 body {
-    background-color: #D9CAB0;
+    background-color: #A6A26F;
+    background: linear-gradient(to bottom, #A6A26F 0%, #F2EDDC 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+    background-attachment: fixed;
 }
 
 .keyword-item {
@@ -9,3 +12,18 @@ body {
     }
 }
 
+.list-name{
+    font-family: 'Mansalva', cursive;
+}
+
+.generate-button{
+    font-family: 'Mansalva', cursive;
+}
+
+//Override default colors
+$theme-colors: (
+    "primary": #6B7334
+);
+
+//Import bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
