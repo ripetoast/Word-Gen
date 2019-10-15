@@ -16,7 +16,8 @@ const ListSelector = (props) => {
             <ul className="nav justify-content-around">
                 {/* dropdown */}
                 <div className="btn-group dropright">
-                    <button type="button" className="list-name btn btn-outline-primary">Lists</button>
+                    {console.log(props.chosenList)}
+                    <button type="button" className="list-name btn btn-outline-primary">{props.chosenList === null ? "Lists" : props.chosenList}</button>
                     <button type="button" className="btn btn-outline-primary dropdown-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span className="sr-only">Toggle Dropdown</span>
                     </button>

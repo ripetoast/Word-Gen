@@ -45,7 +45,7 @@ class App extends React.Component{
                     <img src="./ListGen.svg" alt="logo" style={{ "width": "30rem" }} />
                 </div>
                 <br/>
-                <ListSelector rerenderList={this.rerenderList} onListSelect={this.onListSelect} buttons={this.state.buttons} />
+                <ListSelector chosenList={this.state.selectedList} rerenderList={this.rerenderList} onListSelect={this.onListSelect} buttons={this.state.buttons} />
                 <br />
                 {this.state.selectedList === null ? "" : <List listData={this.state.list} />}
             </div>
