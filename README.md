@@ -10,5 +10,8 @@ Install with:
 Run with:
 ### `npm start`
 
+Deployed on Heroku:
+https://simplewordgen.herokuapp.com/
+
 
 
